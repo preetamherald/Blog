@@ -1,0 +1,20 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+<header>
+    <a href="/" class="hov">Flat Earth</a>
+    <a href="/blog/index/" class="align1 selectedD">Blog</a>
+    <a href="/" class="align1 hov">Home</a>
+  </header>
+  <div style="clear: both;"></div>
+<H1 class= "type">{{post.title}}</H1>
+<div class="card">
+  <div class="card-content">
+    {{post.body}}
+  </div>
+  <div class="card-action">
+    {{post.created_at}}
+  </div>
+</div>
+<a href="/blog/index/" class="btn btn-primary">Go Back</a>
+{% endblock %}

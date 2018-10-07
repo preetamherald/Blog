@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/stylesf.css' %}" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'blog/favicon.ico' %}" />
+    <title>Preetam Yadav</title>
+  </head>
+  <body>
+
+
+    <div class="top-container">
+
+<!--left container  -->
+      <div class="overlay1 thumbnail text-white text-center">
+      <div>  <img class="overlay2 img-responsive" src="{% static 'blog/back.jpg' %}" alt="Card image" >
+        <div class="caption">
+          <h5 class="headline biggerS feature__headline padding10B">Abandon all hope, Ye who enter here.</h5>
+          <p class="strapline  feature__strapline padding10B quote">La vie est drôle</p>
+          <a href="mailto:preetamherald@gmail.com?Subject=Greetings" target="_top" class="card-text borderA">Preetam Yadav</a>
+        </div></div>
+        <div class="caption2">
+          <!--twitter-->
+          <a target= "_blank" class="borderA padding10" href="https://twitter.com/Preetamherald"><i class="fab fa-twitter"> Twitter</i></a>
+          <!--Facebook-->
+          <a target= "_blank" class="borderA padding10" href="http://www.facebook.com/preetamherald"><i class="fab fa-facebook-f"> Facebook</i></a>
+          <!--Linkedin-->
+          <a target= "_blank" class="borderA padding10" href="https://www.linkedin.com/in/preetam-yadav-5a71b2143"><i class="fab fa-linkedin-in"> Linkedin</i></a>
+          <!--Github-->
+          <a target= "_blank" class="borderA padding10" href="https://github.com/preetamherald"><i class="fab fa-github"> Github</i></a>
+          <!--Instagram-->
+          <a target= "_blank" class="borderA padding10" href="https://www.instagram.com/preetam_yadav/"><i class="fab fa-instagram"> Instagram</i></a>
+
+        </div>
+      </div>
+
+<!-- left container Ends -->
+
+<!-- Right Container -->
+      <div Class="sectionB">
+      {% block content %}
+      {% endblock %}
+      <br>
+
+      
+      </div>
+<!-- Right container Ends -->
+    </div>
+
+
+  </body>
+</html>

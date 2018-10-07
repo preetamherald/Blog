@@ -1,0 +1,26 @@
+{% extends 'blog/layout.html' %}
+{% block content %}
+      <header>
+          <a href="/" class="hov">Flat Earth</a>
+          <a href="/blog/index/" class="align1 hov">Blog</a>
+          <a href="/" class="align1 hov selectedD">Home</a>
+
+        </header>
+        <div style="clear: both;"></div>
+        <div class="type">
+          Home
+        </div>
+        <div class="Right_container">
+        <div class="Uformatting">
+          <p>Idea of some personal space being materialised. The tought, craft, and in possession of Preetam Yadav only.</p>
+          <br>
+            <p>Noblesse oblige.</p>
+            <p>Regards<br>
+            Preetam Yadav</p>
+        </div>
+        <div>
+          {% load static %}
+          <img src="{% static 'blog/cheer.gif' %}" alt="Cheer image">
+        </div>
+      </div>
+{% endblock %}

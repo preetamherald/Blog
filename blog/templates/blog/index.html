@@ -1,0 +1,23 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+<header>
+    <a href="/" class="hov">Flat Earth</a>
+    <a href="/blog/index/" class="align1 hov selectedD">Blog</a>
+    <a href="/" class="align1 hov">Home</a>
+</header>
+<div style="clear: both;"></div>
+
+<H1 class= "type">{{title}}</H1>
+<div class="Rt_cont">
+  {% for post in posts %}
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">{{post.created_at}}</div>
+    <div class="card-body text-info">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text"><a href="/blog/details/{{post.id}}" class="btn btn-primary">Read</a></p>
+    </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
