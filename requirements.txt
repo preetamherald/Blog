@@ -1,3 +1,3 @@
-Django==2.1.1
+Django==3.2.25
 pytz==2018.5
 whitenoise==4.1
